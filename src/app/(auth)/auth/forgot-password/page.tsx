@@ -18,7 +18,7 @@ const ForgotPassword = () => {
     <div className="md:w-1/2 w-full space-y-8">
       <div className="text-center">
         <h2 className='text-main font-semibold text-subheading'>QuizAI</h2>
-        <h1 className="font-semibold text-[40px] text-main">Forgot your password</h1>
+        <h1 className="font-semibold text-heading text-main">Forgot your password</h1>
         <p className="text-paragraph text-title">{`Enter your email and we'll send you a 6 digit code`}</p>
       </div>
       <form className="w-full md:w-1/2 space-y-4 mx-auto" onSubmit={handleSubmit(onSubmit)}>

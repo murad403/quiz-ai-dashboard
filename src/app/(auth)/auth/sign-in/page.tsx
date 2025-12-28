@@ -22,7 +22,7 @@ const SignIn = () => {
         <div className="w-full md:w-1/2 flex flex-col items-center justify-center gap-8">
             <div className="text-center">
                 <h2 className='text-main font-semibold text-subheading'>QuizAI</h2>
-                <h1 className="font-semibold text-[40px] text-main">Welcome back</h1>
+                <h1 className="font-semibold text-heading text-main">Welcome back</h1>
                 <p className="text-paragraph text-title">Sign in to access the admin dashboard</p>
             </div>
 
