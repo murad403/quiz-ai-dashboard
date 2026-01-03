@@ -20,7 +20,7 @@ const Header = ({ onMenuClick }: HeaderProps) => {
             
             <div className='flex-1'>
                 {/* Your header content here */}
-                <span className='text-title'>Dashboard</span>
+                <span className='text-main font-semibold text-subheading'>Dashboard</span>
             </div>
         </div>
     )

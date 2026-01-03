@@ -1,9 +1,14 @@
+import PageHeading from '@/components/shared/PageHeading'
 import React from 'react'
+import OverviewStats from './dashboard/OverviewStats'
+import RecentQuizzes from './dashboard/RecentQuizzes'
 
 const page = () => {
   return (
-    <div>
-      adf
+    <div className='space-y-4'>
+      <PageHeading title='Welcome back, Teacher' paragraph='Create and manage your AI-powered quizzes'></PageHeading>
+      <OverviewStats></OverviewStats>
+      <RecentQuizzes></RecentQuizzes>
     </div>
   )
 }
