@@ -8,7 +8,7 @@ const AppWrapper = ({ children }: { children: React.ReactNode }) => {
     const [isSidebarOpen, setIsSidebarOpen] = useState(false)
 
     return (
-        <main className='text-white flex gap-4 relative'>
+        <main className='text-white flex relative'>
             {/* Desktop Sidebar */}
             <div className='hidden lg:block lg:w-100'>
                 <Sidebar />
@@ -30,7 +30,7 @@ const AppWrapper = ({ children }: { children: React.ReactNode }) => {
             </div>
 
             {/* Main Content */}
-            <div className='space-y-4 w-full px-4 md:px-0'>
+            <div className='space-y-4 w-full px-4'>
                 <Header onMenuClick={() => setIsSidebarOpen(true)} />
                 <div>
                     {children}
