@@ -2,6 +2,7 @@
 import React, { useState } from 'react'
 import Sidebar from '../shared/Sidebar'
 import Header from '../shared/Header'
+import LogoutModal from '../ui/LogoutModal'
 
 const AppWrapper = ({ children }: { children: React.ReactNode }) => {
     const [isSidebarOpen, setIsSidebarOpen] = useState(false)
@@ -29,12 +30,15 @@ const AppWrapper = ({ children }: { children: React.ReactNode }) => {
             </div>
 
             {/* Main Content */}
-            <div className='space-y-4 md:px-0 px-4 w-full'>
+            <div className='space-y-4 w-full px-4 md:px-0'>
                 <Header onMenuClick={() => setIsSidebarOpen(true)} />
-                <div className=''>
+                <div>
                     {children}
                 </div>
             </div>
+
+            {/* Logout Modal - Outside drawer */}
+            <LogoutModal />
         </main>
     )
 }

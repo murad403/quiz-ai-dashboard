@@ -4,7 +4,6 @@ import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 import { MdOutlineLogout } from "react-icons/md";
 import { IoClose } from "react-icons/io5";
-import LogoutModal from '../ui/LogoutModal';
 
 interface SidebarProps {
     onClose?: () => void
@@ -74,7 +73,6 @@ const Sidebar = ({ onClose }: SidebarProps) => {
                     <span>Logout</span>
                 </button>
             </div>
-            <LogoutModal />
         </div>
     )
 }

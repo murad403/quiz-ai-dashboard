@@ -1,10 +1,7 @@
-/* eslint-disable @typescript-eslint/no-explicit-any */
 "use client"
-import { useRouter } from 'next/navigation';
 import { FiLogOut } from 'react-icons/fi';
 
 const LogoutModal = () => {
-    const router = useRouter();
     const handleLogout = () => {
         (document.getElementById('my_modal_1') as HTMLDialogElement)?.close();
     };
