@@ -7,6 +7,7 @@ const page = () => {
     <div>
       <PageHeading title='Create a New Quiz' paragraph='Let AI generate quiz questions based on your topic and context'></PageHeading>
       <CreateQuizForm></CreateQuizForm>
+      
     </div>
   )
 }
