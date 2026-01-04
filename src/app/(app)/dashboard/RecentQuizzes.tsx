@@ -17,10 +17,10 @@ const RecentQuizzes = () => {
             </div>
 
             <div className='space-y-4'>
-                <div className='bg-card border border-gray-700/50 px-6 py-10 rounded-lg flex justify-between items-center'>
+                <div className='bg-card border border-gray-700/50 px-6 md:py-10 py-6 rounded-lg flex flex-col md:flex-row gap-4 justify-between md:items-center'>
                     <div>
-                        <h2 className='text-lg font-medium text-main'>World War II History</h2>
-                        <div className='flex items-center gap-4 text-title text-paragraph'>
+                        <h2 className='text-lg font-medium text-main mb-4 md:mb-0'>World War II History</h2>
+                        <div className='flex items-center md:gap-4 gap-2 text-title text-sm md:text-paragraph'>
                             <p>10 questions</p>
                             <p>•</p>
                             <p>24 submissions</p>
@@ -37,10 +37,10 @@ const RecentQuizzes = () => {
                         </button>
                     </div>
                 </div>
-                <div className='bg-card border border-gray-700/50 px-6 py-10 rounded-lg flex justify-between items-center'>
+                <div className='bg-card border border-gray-700/50 px-6 md:py-10 py-6 rounded-lg flex flex-col md:flex-row gap-4 justify-between md:items-center'>
                     <div>
-                        <h2 className='text-lg font-medium text-main'>World War II History</h2>
-                        <div className='flex items-center gap-4 text-title text-paragraph'>
+                        <h2 className='text-lg font-medium text-main mb-4 md:mb-0'>World War II History</h2>
+                        <div className='flex items-center md:gap-4 gap-2 text-title text-sm md:text-paragraph'>
                             <p>10 questions</p>
                             <p>•</p>
                             <p>24 submissions</p>
