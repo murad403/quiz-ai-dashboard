@@ -19,3 +19,10 @@ export const resetPasswordValidation = z.object({
   message: "Passwords don't match",
   path: ["confirmPassword"],
 });
+
+
+export const quizValidation = z.object({
+  topic: z.string().min(1, "Quiz topic is required"),
+  context: z.string().optional(),
+  numberOfQuestions: z.number().min(1, "At least 1 question is required").max(50, "Maximum 50 questions allowed")
+});
