@@ -49,7 +49,7 @@ const ResetPassword = () => {
               className="absolute inset-y-0 right-0 flex items-center pr-4 text-header hover:text-header/80"
               aria-label={showNewPassword ? "Hide password" : "Show password"}
             >
-              {showNewPassword ? <EyeOff size={18} /> : <Eye size={18} />}
+              {showNewPassword ? <Eye size={18} /> : <EyeOff size={18} />}
             </button>
           </div>
           {errors.newPassword && <p className="text-red-500 text-sm mt-2">{errors.newPassword.message}</p>}
@@ -73,7 +73,7 @@ const ResetPassword = () => {
               className="absolute inset-y-0 right-0 flex items-center pr-4 text-header hover:text-header/80"
               aria-label={showConfirmPassword ? "Hide password" : "Show password"}
             >
-              {showConfirmPassword ? <EyeOff size={18} /> : <Eye size={18} />}
+              {showConfirmPassword ? <Eye size={18} /> : <EyeOff size={18} />}
             </button>
           </div>
           {errors.confirmPassword && <p className="text-red-500 text-sm mt-2">{errors.confirmPassword.message}</p>}

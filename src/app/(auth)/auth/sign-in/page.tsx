@@ -59,7 +59,7 @@ const SignIn = () => {
                             className="absolute inset-y-0 right-0 flex items-center pr-4 text-header hover:text-header/80"
                             aria-label={showPassword ? "Hide password" : "Show password"}
                         >
-                            {showPassword ? <EyeOff size={18} /> : <Eye size={18} />}
+                            {showPassword ? <Eye size={18} /> : <EyeOff size={18} />}
                         </button>
                     </div>
                     {errors.password && <p className="text-red-500 text-sm mt-2">{errors.password.message}</p>}
