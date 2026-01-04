@@ -29,7 +29,7 @@ const RecentQuizzes = () => {
                         </div>
                     </div>
                     <div className='flex items-center gap-3'>
-                        <Link href={"/quiz/1"} className='text-sm font-medium text-center py-2 rounded-lg bg-black border border-gray-700/50 hover:bg-header/90 px-4 capitalize'>
+                        <Link href={`/quizzes/${1}`} className='text-sm font-medium text-center py-2 rounded-lg bg-black border border-gray-700/50 hover:bg-header/90 px-4 capitalize'>
                             View Results
                         </Link>
                         <button className='p-2 hover:bg-header/90 rounded-lg'>
@@ -49,7 +49,7 @@ const RecentQuizzes = () => {
                         </div>
                     </div>
                     <div className='flex items-center gap-3'>
-                        <Link href={"/quiz/1"} className='text-sm font-medium text-center py-2 rounded-lg bg-black border border-gray-700/50 hover:bg-header/90 px-4 capitalize'>
+                        <Link href={`/quizzes/${1}`} className='text-sm font-medium text-center py-2 rounded-lg bg-black border border-gray-700/50 hover:bg-header/90 px-4 capitalize'>
                             View Results
                         </Link>
                         <button className='p-2 hover:bg-header/90 rounded-lg'>
