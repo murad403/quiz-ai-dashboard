@@ -8,6 +8,7 @@ import { RiLoopLeftLine } from 'react-icons/ri';
 import { MdSaveAlt } from 'react-icons/md';
 import { Save } from 'lucide-react';
 import SaveAndPublishModal from '@/components/ui/SaveAndPublishModal';
+import GeneratedQuestions from './GeneratedQuestions';
 
 type TInputs = z.infer<typeof quizValidation>;
 
@@ -97,8 +98,8 @@ const CreateQuizForm = () => {
             </div>
 
 
-            <div>
-                <div className='flex justify-between items-center'>
+            <div className='max-w-6xl mx-auto mt-8'>
+                <div className='flex flex-col md:flex-row gap-4 justify-between md:items-center'>
                     <div>
                         <h1 className='font-semibold text-main text-heading'>Topic</h1>
                         <p className='text-paragraph text-title'>5 questions generated</p>
@@ -117,6 +118,8 @@ const CreateQuizForm = () => {
                     </div>
                     <SaveAndPublishModal />
                 </div>
+
+                <GeneratedQuestions></GeneratedQuestions>
             </div>
         </div>
     );

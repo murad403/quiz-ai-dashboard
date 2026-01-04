@@ -19,7 +19,7 @@ const Sidebar = ({ onClose }: SidebarProps) => {
     }
 
     return (
-        <div className='bg-card min-h-screen border-r border-gray-700/50 py-8 flex flex-col justify-between relative'>
+        <div className='bg-card h-screen sticky top-0 border-r border-gray-700/50 py-8 flex flex-col justify-between relative'>
             {/* Close Button for Mobile */}
             {onClose && (
                 <button 
